@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(22, 22, 22);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body > section {
+  background-size: cover;
+}
+body > section:nth-of-type(1) {
+  background: url(../img/img1.jpg) center;
+}
+body > section:nth-of-type(2) {
+  background: url(../img/img2.jpg) center;
+}
+body > section:nth-of-type(3) {
+  background: url(../img/img3.jpg) center;
+}
+
+.crad {
+  width: 300px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.crad > span {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.crad > span:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #b81212;
+  opacity: 0.5;
+  transform: skew(-30deg) translateX(-270px);
+  z-index: 4;
+  transition: all 0.6s ease;
+}
+.crad > span:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #b81212;
+  opacity: 0.5;
+  transform: skew(30deg) translateX(-290px);
+  z-index: 3;
+  transition: all 0.55s ease;
+}
+.crad > span:nth-of-type(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #b81212;
+  opacity: 0.5;
+  transform: skew(-30deg) translateX(-220px);
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.crad > span:nth-of-type(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #b81212;
+  opacity: 0.5;
+  transform: skew(30deg) translateX(-240px);
+  z-index: 1;
+  transition: all 0.45s ease;
+}
+.crad > div {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 5;
+  padding-left: 5%;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.crad > div > h3 {
+  color: white;
+  font-family: "semibold";
+  text-transform: uppercase;
+}
+.crad > div > p {
+  color: rgb(211, 211, 211);
+  font-family: "regular";
+  width: 70%;
+}
+.crad:hover > span:nth-of-type(1) {
+  transform: skew(-30deg) translateX(-70px);
+}
+.crad:hover > span:nth-of-type(2) {
+  transform: skew(30deg) translateX(-90px);
+}
+.crad:hover > span:nth-of-type(3) {
+  transform: skew(-30deg) translateX(-20px);
+}
+.crad:hover > span:nth-of-type(4) {
+  transform: skew(30deg) translateX(-40px);
+}
+.crad:hover > div {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  background-color: #b81212;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > p {
+  color: white;
+  text-transform: capitalize;
+}/*# sourceMappingURL=master.css.map */
